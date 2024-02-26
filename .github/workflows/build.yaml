@@ -1,6 +1,9 @@
 name: Build & test project
 
 on: [push]
+  pull request:
+    types: [opened, reopened]
+    types: [review_requested]
 
 jobs:
   build:
